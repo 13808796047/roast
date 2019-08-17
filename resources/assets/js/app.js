@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import Vue from 'vue';
+import store from './store';
 import router from './routes';
 window._ = require('lodash');
 try {
@@ -35,5 +36,6 @@ if (token) {
 //     el: '#app'
 // });
 new Vue({
-    router
+    router,
+    store,
 }).$mount('#app');
