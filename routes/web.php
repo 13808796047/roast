@@ -17,3 +17,7 @@ Route::get('login', 'Web\AppController@getLogin')
     ->name('login');
 Route::get('auth/{social}', 'Web\AuthenticationController@getSocialRedirect');
 Route::get('auth/{social}/callback', 'Web\AuthenticationController@getSocialCallback');
+
+Route::get('geocode', function () {
+    return \App\Utilities\GaodeMaps::geocodeAddress('天城路1号', '杭州', '浙江');
+});
