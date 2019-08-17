@@ -12,7 +12,7 @@ return [
     | default location for this type of information, allowing packages
     | to have a conventional place to find your various credentials.
     |
-    */
+     */
 
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
@@ -34,5 +34,9 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'github' => [
+        'client_id' => env('GIT_CLIENT_ID'),
+        'client_secret' => env('GIT_CLIENT_SECRET'),
+        'redirect' => env('GIT_REDIRECT'),
+    ],
 ];

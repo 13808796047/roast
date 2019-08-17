@@ -8,6 +8,11 @@ class AppController extends Controller
 {
     public function getApp()
     {
-        return view('app');
+        // return view('app');
+        return 1111;
+    }
+    public function getLogin()
+    {
+        return view('login');
     }
 }
