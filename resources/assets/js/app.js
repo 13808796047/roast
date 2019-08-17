@@ -3,6 +3,8 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import Vue from 'vue';
+import router from './routes';
 window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
@@ -29,6 +31,9 @@ if (token) {
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+// const app = new Vue({
+//     el: '#app'
+// });
+new Vue({
+    router
+}).$mount('#app');
